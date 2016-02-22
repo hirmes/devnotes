@@ -111,6 +111,6 @@ Strip sound
 
 Convert to web friendly codec
 
-	ffmpeg -y -i m1.AVI -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -c:a libvo_aacenc -b:a 128k "${name}.mp4"
+	ffmpeg -y -i "$name" -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -c:a libvo_aacenc -b:a 128k "${name}.mp4"
 	
 
