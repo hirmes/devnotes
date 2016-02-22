@@ -1,10 +1,18 @@
 # devnotes
 
+[Meta](#Meta) | [git](#git) | [Node](#Node) | [UNIX](#UNIX)
+
+***
+
+<a id="Meta"></a>
+
 ## Meta
 
 Markdown editor: [MacDown](http://macdown.uranusjr.com/)
 
-## git
+<a id="git"></a>
+
+## git 
 
 ### Starting a project
 
@@ -46,7 +54,9 @@ Every time:
 
 	$ git push -u origin master
 
-## Node
+<a id="Node"></a>
+
+## Node 
 
 ### Setup New Project
 
@@ -80,4 +90,27 @@ then to run program:
 	$ node index.js
 
 
+<a id="UNIX"></a>
+
+## UNIX
+
+### Run .sh script
+	$ chmod +x script.sh
+	$ ./script.sh
+	
+### .sh loop
+	#!/bin/bash
+	for name in *.AVI; do
+  		ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
+	done 
+	
+### FFMPEG
+Strip sound
+
+	ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
+
+Convert to web friendly codec
+
+	ffmpeg -y -i m1.AVI -c:v libx264 -preset slow -crf 22 -pix_fmt yuv420p -c:a libvo_aacenc -b:a 128k "${name}.mp4"
+	
 
