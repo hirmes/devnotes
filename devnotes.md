@@ -156,7 +156,7 @@ https://www.safaribooksonline.com/blog/2014/03/18/keeping-homebrew-date/
 	
 (`ps2pdf` is part of the `ghostscript` package)	
 	
-## FFMPEG
+## ffmpeg
 Strip sound
 
 	ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
@@ -176,7 +176,10 @@ Create series of images based on video: *-r frame rate, the higher the #, the mo
 Make a video out of image series (***untested***)
 
 	ffmpeg -y -pix_fmt yuv420p -start_number 40 -i "%04d.png" output.mp4
-	
+
+Make an animated gif out of stills (*"%03d" assumes a 3 digit length series of filenames (i.e. 001.png, 002.png, etc.)*):
+
+	ffmpeg -i %03d.png animated.gif
 		
 ## ImageMagick
 
