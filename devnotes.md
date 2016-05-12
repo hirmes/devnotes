@@ -96,7 +96,9 @@ First update node/npm.  Safest way (*sigh*) is to get the installer at [nodejs.o
 
 Init Project (really it just creates a package.json file in the current directory):
 
-	$ node init
+	$ mkdir project_name
+	$ cd project_name
+	$ npm init
 	
 If not using a remote repo, add this line to `package.json` after the `version` line:
 
@@ -216,3 +218,15 @@ With filename labels:
 	$ montage -label '%f' -geometry 320x240  m*.png tile_labels.png 
 
 
+###Break up large image into smaller tiled images
+	$ convert sunset.jpg -crop 612x792 +repage +adjoin sunset_files%02d.jpg
+
+## Audio
+
+Split an mp3 file into new files based on silence:
+
+	$ mp3splt -s -p th=-30,min=1,rm FILE.mp3
+	
+Join a bunch of mp3s into one:
+
+	$ mpgjoin *.mp3 -o JOINED.mp3
