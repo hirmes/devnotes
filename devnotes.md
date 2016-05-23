@@ -1,7 +1,8 @@
 # devnotes
 
-[Meta](#Meta) | [git](#git) | [Node](#Node) | [UNIX](#UNIX)
-
+[Meta](#Meta) | [sublime](#Sublime)
+ | [git](#git) | [Node](#Node) | [UNIX](#UNIX)
+ 
 ***
 
 
@@ -21,8 +22,21 @@ Markdown editor: [MacDown](http://macdown.uranusjr.com/)
 
 
 
+<a id="Sublime"></a>
 
+## Sublime Text
 
+### Setup
+
+Symlink the CLI:
+
+	$ ln -s /Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+
+Then you can do stuff like:
+
+	$ sublime .
+	
+to open the current Terminal folder in Sublime Text
 
 
 
@@ -123,8 +137,10 @@ then to run program:
 
 	$ node index.js
 
+	
+To uninstall package:
 
-
+	$ npm uninstall [package name] --save
 
 
 
