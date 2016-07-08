@@ -1,15 +1,18 @@
 # devnotes
 
-[Meta](#Meta) | [sublime](#Sublime)
- | [git](#git) | [Node](#Node) | [UNIX](#UNIX)
+[meta](#Meta) | [sublime](#Sublime)
+ | [git](#git) | [node](#Node) | [unix](#UNIX) | [webpack](#webpack) | [react](#ReactJS) | [webdev CLI tools](#webdevCLI)
  
 ***
 
 
 
 
-
-
+````
+TO DO: Add auto convert of these docs to html via
+https://github.com/sindresorhus/github-markdown-css
+https://www.npmjs.com/package/markdown-html
+````
 
 
 
@@ -26,6 +29,8 @@ Markdown editor: [MacDown](http://macdown.uranusjr.com/)
 
 ## Sublime Text
 
+#### [Sublime Text Cheatsheet](sublime-text.md)
+
 ### Setup
 
 Symlink the CLI:
@@ -38,8 +43,41 @@ Then you can do stuff like:
 	
 to open the current Terminal folder in Sublime Text
 
+### Build system
 
+In this example, for using node:
+**`Tools -> Build System -> New Build System...`**
 
+```javascript
+{
+  "cmd": ["/usr/local/bin/node", "$file"],
+  "selector": "source.js"
+}
+```
+Save to `Application Support/Sublime Text 3/Packages/User/`
+
+Then just create a file, save it, and Command+B to run in app.
+
+### Project Specific Syntax Highlighting
+
+Say you want Babel syntax highlighting for your Javascript files in your React projects.
+
+* Install the `Project Specific Syntax Settings` plugin
+* Add this to your `.sublime-project` file:
+
+```json
+	{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"syntax_override": {
+          "\\.js$": ["Babel", "JavaScript (Babel)"]
+      }
+}
+```
 
 <a id="git"></a>
 ## git 
@@ -124,14 +162,14 @@ To add npm package and include it in package.json:
 
 Create an `index.js` file and add this template:
 
-	var [PROJECT_NAME] = function() {
+```javascript
+var [PROJECT_NAME] = function() {
 	
-		"use strict";
+	"use strict";
 	
-		
 	
-	}();
-
+}();
+```
 
 then to run program:
 
@@ -246,3 +284,63 @@ Split an mp3 file into new files based on silence:
 Join a bunch of mp3s into one:
 
 	$ mpgjoin *.mp3 -o JOINED.mp3
+	
+<a name="webpack"></a>
+
+## webpack
+
+Basic **webpack.config.js**
+
+```javascript
+module.exports = {
+	entry: "./index.js",
+	output: {
+		path: __dirname,
+		filename: "bundle.js"
+	},
+	module: {
+		loaders: [
+			{ test: /\.css$/, loader: "style!css" }
+		]
+	},
+    devtool: "source-map"
+}
+```
+
+And remember to put
+
+```html
+<script src="bundle.js"></script>
+```
+
+in your **``index.html``**
+
+Use the webpack server for file watching & hot loading:
+
+	$ webpack-dev-server --progress --colors  --inline
+	
+view in browser at **``http://localhost:8080/``**
+
+Use node-like ``require()`` syntax in javascript files to load files:
+
+```javascript
+require("./style.css");
+document.write(require("./content.js"));
+```
+	
+	
+<a name="ReactJS"></a>
+
+## ReactJS
+
+
+
+<a name="webdevCLI"></a>
+
+## Web Dev Command Line Tools
+
+### Remove unused css rules
+
+	$ uncss source.html > only-used-css.css
+	
+
