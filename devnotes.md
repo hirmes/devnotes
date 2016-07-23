@@ -104,7 +104,10 @@ contents of file should be:
 
 	# Thumbnails
 	._*
-	
+
+finally:
+
+	$ git init	
 ### Commit
 
 	$ git add .

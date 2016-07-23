@@ -6,11 +6,11 @@ React Native notes
 Since I already have node installed outside of Homebrew, it caused some problems. To fix:
 
 Step 1:
-$ sudo chmod 777 ~/.babel.json
+`$ sudo chmod 777 ~/.babel.json`
 
 Step 2:
-Create a new file called local.properties in /code/AwesomeProject/android with the line
-sdk.dir=/Users/hirmes/Library/Android/sdk
+Create a new file called `local.properties` in `/code/AwesomeProject/android` with the line
+`sdk.dir=/Users/hirmes/Library/Android/sdk`
 
 Step 3:
 Make sure emulator is running before running project:
@@ -19,13 +19,17 @@ then start the emulator from there
 
 Step 4:
 run the project using sudo
-$ sudo react-native run-android
+`$ sudo react-native run-android`
 
 Step 5:
-Permissions are all screwed up. 
+Permissions are all screwed up. You might need to
+`$ sudo chmod 777 *`
 
 
 For some reason when creating a new project ("NavTest") with $ react-native init NavTest all the permissions issues went away
+
+To change the name of the app (but not the project) (Android only) modify:
+`android/app/src/main/res/values/strings.xml`
 
 **To get to the dev menu (and this the ability to live reload) from the Android emulator, press Command+M**
 
@@ -36,6 +40,22 @@ For some reason when creating a new project ("NavTest") with $ react-native init
 * $ cd ProjectName
 * $ react-native run-android
 * Launch app in emulator, then ommand+M, then Live Reload or Hot Reload
+* Debugger: `http://localhost:8081/debugger-ui`
+
+## Running on emulator
+
+Get a list of emulators from command line:
+
+`$ android list avd`
+
+## Running on device
+
+Quit emulator (if running), then plug in device, then:
+
+```bash
+$ adb reverse tcp:8081 tcp:8081
+$ sudo react-native run-android
+```
 
 ## Errors You May Encounter
 
@@ -50,6 +70,9 @@ For some reason when creating a new project ("NavTest") with $ react-native init
 * If `adb` tool is not found, make sure Android tools are in PATH by adding this line to `.bash_profile`:
 	`PATH="/Users/hirmes/Library/Android/sdk/tools:/Users/hirmes/Library/Android/sdk/platform-tools:${PATH}"`
 	
+### UIExplorer
+
+Hmm, where to begin?
 
 
 
