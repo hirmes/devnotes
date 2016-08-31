@@ -44,9 +44,19 @@ To change the name of the app (but not the project) (Android only) modify:
 
 ## Running on emulator
 
-Get a list of emulators from command line:
+```bash
+$ emulator @react-native
+```
+In separate console window:
+
+```
+$ sudo react-native run-android
+```
+
+If you don't know the name of your emulator:
 
 `$ android list avd`
+
 
 ## Running on device
 

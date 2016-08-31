@@ -342,6 +342,16 @@ document.write(require("./content.js"));
 
 ## Web Dev Command Line Tools
 
+### Run simple web server
+
+`cd	` to the directory you want to server pages from, then:
+
+	$ python -m SimpleHTTPServer 8000
+	
+or
+
+	$ php -S localhost:8000
+
 ### Remove unused css rules
 
 	$ uncss source.html > only-used-css.css
