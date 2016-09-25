@@ -80,11 +80,17 @@ $ sudo react-native run-android
 * If `adb` tool is not found, make sure Android tools are in PATH by adding this line to `.bash_profile`:
 	`PATH="/Users/hirmes/Library/Android/sdk/tools:/Users/hirmes/Library/Android/sdk/platform-tools:${PATH}"`
 	
-### UIExplorer
+### Blank white screen
 
-Hmm, where to begin?
+Exporting classes incorrectly?
 
+`export class Something` should be `class Something` then at the bottom `module.exports = Something;`
 
+### "React.createElement: type should not be null, undefined, boolean, or number"
+
+Importing referenced component incorrectly?
+
+`import { Something } from "something";` instead of `import Something from "something";`
 
 ## OAuth
 

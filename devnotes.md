@@ -194,6 +194,27 @@ To uninstall package:
 <a id="UNIX"></a>
 ## UNIX (general)
 
+## Bash
+
+[Cheatsheet](https://gist.github.com/LeCoupa/122b12050f5fb267e75f)
+
+### Editing Command line
+
+|Command  |Description                |Mnemonic/Note |
+|---------|---------------------------|---------|
+|control+a|Go to **beginning** of line|'a' begins alphabet|
+|control+e|Go to **end** of line      |'e' for end|
+|control+k|**Delete** from current cursor position to end of line|'k' for kill|
+|control+w|**Delete** word left of cursor|'w' for word|
+|option+click|Move cursor to a position|(OS X Terminal)|
+|tab|Auto complete|none|
+
+
+
+### History
+
+Use `control-r` to **search** history
+
 ### Homebrew
 
 https://www.safaribooksonline.com/blog/2014/03/18/keeping-homebrew-date/
@@ -356,4 +377,46 @@ or
 
 	$ uncss source.html > only-used-css.css
 	
+### eslint
 
+Standard `.eslintrc.json` config
+
+```json
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "installedESLint": true,
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
+```
