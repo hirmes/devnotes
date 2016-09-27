@@ -377,6 +377,10 @@ or
 
 	$ uncss source.html > only-used-css.css
 	
+### Convert image to base64 (and place text in pastebin)
+
+	$ openssl base64 < path/to/file.png | tr -d '\n' | pbcopy
+	
 ### eslint
 
 Standard `.eslintrc.json` config

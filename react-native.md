@@ -92,6 +92,13 @@ Importing referenced component incorrectly?
 
 `import { Something } from "something";` instead of `import Something from "something";`
 
+### "Execution failed for task ':app:dexDebug'."
+
+This error appears when trying to compile after adding a package such as react-native-share. From project directory:
+
+	$ cd android
+	$ sudo ./gradlew clean
+	
 ## OAuth
 
 Setup android.manifest so app will accept custom URI scheme:
