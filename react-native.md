@@ -126,4 +126,29 @@ Setup android.manifest so app will accept custom URI scheme:
 </manifest>
 ```
 
+## Icons
+
+[Material Design Icons](https://materialdesignicons.com/) for use inside app
+
+[App icon specs](http://stackoverflow.com/questions/34329715/how-to-make-react-native-app-icon)
+
+## ES6
+
+### Classes
+
+In `YourClassName.js`:
+
+```javascript
+class YourClassName extends Component {
+}
+export default YourClassName;
+```
+
+Then to import:
+
+```javascript
+import YourClassName from "./YourClassName.js";
+```
+
+[Understanding Class Export Syntax](http://stackoverflow.com/questions/31852933/why-es6-react-component-works-only-with-export-default/31853887#31853887)
 

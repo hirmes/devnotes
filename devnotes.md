@@ -204,12 +204,16 @@ To uninstall package:
 |---------|---------------------------|---------|
 |control+a|Go to **beginning** of line|'a' begins alphabet|
 |control+e|Go to **end** of line      |'e' for end|
+|option+[left or right]|move cursor by **word**|standard Mac|
 |control+k|**Delete** from current cursor position to end of line|'k' for kill|
+|control+u|**Delete** from current cursor position to start of line| |
 |control+w|**Delete** word left of cursor|'w' for word|
 |option+click|Move cursor to a position|(OS X Terminal)|
-|tab|Auto complete|none|
+|tab|Auto complete| |
 
+`cmd-shift-A` **selects** the output of the previous command
 
+`cmd-ctrl-V` **Pastes** text fully escaped, including spaces
 
 ### History
 
