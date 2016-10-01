@@ -35,12 +35,17 @@ Markdown editor: [MacDown](http://macdown.uranusjr.com/)
 
 Symlink the CLI:
 
-	$ ln -s /Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+```bash
+$ ln -s /Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+```
+
 
 Then you can do stuff like:
 
-	$ sublime .
-	
+```bash
+$ sublime .
+```
+
 to open the current Terminal folder in Sublime Text
 
 ### Build system
@@ -84,12 +89,16 @@ Say you want Babel syntax highlighting for your Javascript files in your React p
 
 ### Starting a project
 
-	$ mkdir projectname
-	$ cd projectname
+```bash
+$ mkdir projectname
+$ cd projectname
+```
 	
 add .gitignore file
 
-	$ nano .gitignore
+```bash
+$ nano .gitignore
+```
 	
 contents of file should be:
 
@@ -107,31 +116,45 @@ contents of file should be:
 
 finally:
 
-	$ git init	
+```bash
+$ git init
+```
+
 ### Commit
 
-	$ git add .
-	$ git commit -m "Message"
-	
+```bash
+$ git add .
+$ git commit -m "Message"
+```
+
 or just
 
-	$ git commit -a -m "Message"
-	
+```bash
+$ git commit -a -m "Message"
+```
+
 ### Push to remote (github)
 
 First time only (set up link to remote):
 
-	$ git remote add origin https://github.com/hirmes/[PROJECTNAME].git
+```bash
+$ git remote add origin https://github.com/hirmes/[PROJECTNAME].git
+```
 
 If error, redo with u/p
 
 Every time:	
 
-	$ git push -u origin master
-	
+```bash
+$ git push -u origin master
+```
+
 ### Pull from repo and ignore local changes
-	$ git reset --hard HEAD
-	$ git pull	
+
+```bash
+$ git reset --hard HEAD
+$ git pull
+```
 	
 
 
@@ -151,9 +174,11 @@ First update node/npm.  Safest way (*sigh*) is to get the installer at [nodejs.o
 
 Init Project (really it just creates a package.json file in the current directory):
 
-	$ mkdir project_name
-	$ cd project_name
-	$ npm init
+```bash
+$ mkdir project_name
+$ cd project_name
+$ npm init
+```
 	
 If not using a remote repo, add this line to `package.json` after the `version` line:
 
@@ -161,7 +186,9 @@ If not using a remote repo, add this line to `package.json` after the `version` 
 	
 To add npm package and include it in package.json:
 
-	$ npm install --save [package name]
+```bash
+$ npm install --save [package name]
+```
 
 Create an `index.js` file and add this template:
 
@@ -176,13 +203,15 @@ var [PROJECT_NAME] = function() {
 
 then to run program:
 
-	$ node index.js
-
+```bash
+$ node index.js
+```
 	
 To uninstall package:
 
-	$ npm uninstall [package name] --save
-
+```bash
+$ npm uninstall [package name] --save
+```
 
 
 
@@ -224,19 +253,25 @@ Use `control-r` to **search** history
 https://www.safaribooksonline.com/blog/2014/03/18/keeping-homebrew-date/
 
 ### Run .sh script
-	$ chmod +x script.sh
-	$ ./script.sh
+```bash
+$ chmod +x script.sh
+$ ./script.sh
+```
 	
 ### .sh loop
-	#!/bin/bash
-	for name in *.AVI; do
-  		ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
-	done 
+```bash
+#!/bin/bash
+for name in *.AVI; do
+	ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
+done 
+```
 
 ### Convert man page to pdf
 
-	$ man -t ffmpeg > ffmpeg.ps
-	$ ps2pdf ffmpeg.ps ffmpeg.pdf
+```bash
+$ man -t ffmpeg > ffmpeg.ps
+$ ps2pdf ffmpeg.ps ffmpeg.pdf
+```
 	
 (`ps2pdf` is part of the `ghostscript` package)	
 	
