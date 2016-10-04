@@ -152,3 +152,17 @@ import YourClassName from "./YourClassName.js";
 
 [Understanding Class Export Syntax](http://stackoverflow.com/questions/31852933/why-es6-react-component-works-only-with-export-default/31853887#31853887)
 
+## Creating Release Build
+
+[FB RN Docs](https://facebook.github.io/react-native/docs/signed-apk-android.html)
+
+Once all the signing crap is in place:
+
+```bash
+$ cd android
+$ sudo ./gradlew assembleRelease
+```
+then grab the `.apk` file here:
+
+`$ cd app/build/outputs/apk/`
+

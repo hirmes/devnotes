@@ -7,12 +7,13 @@
 
 
 
+<!---
 
-````
 TO DO: Add auto convert of these docs to html via
 https://github.com/sindresorhus/github-markdown-css
 https://www.npmjs.com/package/markdown-html
-````
+
+-->
 
 
 
@@ -215,17 +216,29 @@ $ npm uninstall [package name] --save
 
 
 
+## npm
 
+Check your current modules against latest versions:
 
+`$ npm outdated`
 
+Update specific module to latest:
+
+`$ npm update MODULE_NAME`
+
+and add `-g` (and potentially `sudo`) to update the global, rather than project instance of a module.
+
+[npm-check](https://www.npmjs.com/package/npm-check) might be slightly better way to do this.
 
 
 <a id="UNIX"></a>
 ## UNIX (general)
 
+[Big Terminal info dump](http://furbo.org/2014/09/03/the-terminal/)
+
 ## Bash
 
-[Cheatsheet](https://gist.github.com/LeCoupa/122b12050f5fb267e75f)
+[Bash Cheatsheet](https://gist.github.com/LeCoupa/122b12050f5fb267e75f)
 
 ### Editing Command line
 
