@@ -1,6 +1,6 @@
 # devnotes
 
-[meta](#Meta) | [sublime](#Sublime)
+[meta](#Meta) | [sublime](sublime-text.md)
  | [git](#git) | [node](#Node) | [unix](#UNIX) | [webpack](#webpack) | [react](#ReactJS) | [webdev CLI tools](#webdevCLI)
  
 ***
@@ -25,65 +25,6 @@ Markdown editor: [MacDown](http://macdown.uranusjr.com/)
 
 
 
-
-<a id="Sublime"></a>
-
-## Sublime Text
-
-#### [Sublime Text Cheatsheet](sublime-text.md)
-
-### Setup
-
-Symlink the CLI:
-
-```bash
-$ ln -s /Applications/Sublime\ Text\.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
-```
-
-
-Then you can do stuff like:
-
-```bash
-$ sublime .
-```
-
-to open the current Terminal folder in Sublime Text
-
-### Build system
-
-In this example, for using node:
-**`Tools -> Build System -> New Build System...`**
-
-```javascript
-{
-  "cmd": ["/usr/local/bin/node", "$file"],
-  "selector": "source.js"
-}
-```
-Save to `Application Support/Sublime Text 3/Packages/User/`
-
-Then just create a file, save it, and Command+B to run in app.
-
-### Project Specific Syntax Highlighting
-
-Say you want Babel syntax highlighting for your Javascript files in your React projects.
-
-* Install the `Project Specific Syntax Settings` plugin
-* Add this to your `.sublime-project` file:
-
-```json
-	{
-	"folders":
-	[
-		{
-			"path": "."
-		}
-	],
-	"syntax_override": {
-          "\\.js$": ["Babel", "JavaScript (Babel)"]
-      }
-}
-```
 
 <a id="git"></a>
 ## git 
@@ -236,7 +177,7 @@ and add `-g` (and potentially `sudo`) to update the global, rather than project 
 
 [Big Terminal info dump](http://furbo.org/2014/09/03/the-terminal/)
 
-## Bash
+## Bash / Terminal
 
 [Bash Cheatsheet](https://gist.github.com/LeCoupa/122b12050f5fb267e75f)
 
@@ -261,6 +202,7 @@ and add `-g` (and potentially `sudo`) to update the global, rather than project 
 
 Use `control-r` to **search** history
 
+Use `command-↑` or `command-↓` to jump to previous/next command line prompt
 ### Homebrew
 
 https://www.safaribooksonline.com/blog/2014/03/18/keeping-homebrew-date/

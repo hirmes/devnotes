@@ -126,7 +126,11 @@ Setup android.manifest so app will accept custom URI scheme:
 </manifest>
 ```
 
-## Icons
+## Styling
+
+[Cheatsheet](https://github.com/vhpoet/react-native-styling-cheat-sheet)
+
+### Icons
 
 [Material Design Icons](https://materialdesignicons.com/) for use inside app
 
@@ -148,6 +152,16 @@ Then to import:
 
 ```javascript
 import YourClassName from "./YourClassName.js";
+```
+
+If you have methods tha need to be referenced in other methods, add a constructor method:
+
+```javascript
+	constructor(props, context) {
+		super(props, context);
+
+		this.METHODNAME = this.METHODNAME(this);
+	}
 ```
 
 [Understanding Class Export Syntax](http://stackoverflow.com/questions/31852933/why-es6-react-component-works-only-with-export-default/31853887#31853887)
