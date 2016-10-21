@@ -1,4 +1,4 @@
-React Native notes
+React Native notes [currently Android focused]
 ------------------
 
 ## Installation issues
@@ -135,6 +135,14 @@ Setup android.manifest so app will accept custom URI scheme:
 [Material Design Icons](https://materialdesignicons.com/) for use inside app
 
 [App icon specs](http://stackoverflow.com/questions/34329715/how-to-make-react-native-app-icon)
+
+[AndroidAssetStudio](http://romannurik.github.io/AndroidAssetStudio/)
+
+### Fonts
+
+* Use `.otf` format
+* Place font files in /PROJECTNAME/android/app/src/main/assets/fonts
+* Refer to font in styles: `fontFamily: "Gotham Medium"`
 
 ## ES6
 
