@@ -1,4 +1,4 @@
-## Sublime Text Cheat Sheet
+## Sublime Text
 
 ### Setup
 

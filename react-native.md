@@ -1,5 +1,5 @@
-React Native notes [currently Android focused]
-------------------
+# React Native [currently Android focused]
+
 
 ## Installation issues
 
