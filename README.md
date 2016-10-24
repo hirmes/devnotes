@@ -1,5 +1,7 @@
 # devnotes
 
+
+
 ### Dev
 
 * [bash/Terminal](Bash_and_Terminal.md)
@@ -30,13 +32,6 @@
 * [audio](audio.md)
 
 
-<!---
-
-TO DO: Add auto convert of these docs to html via
-https://github.com/sindresorhus/github-markdown-css
-https://www.npmjs.com/package/markdown-html
-
--->
 
 
 

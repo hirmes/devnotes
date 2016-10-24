@@ -37,3 +37,12 @@ With filename labels:
 	$ convert sunset.jpg -crop 612x792 +repage +adjoin sunset_files%02d.jpg
 
 
+###Batch crop images:
+
+Use:
+
+	mogrify -crop [width]x[height]+[x]+[y] *.png
+	
+example:
+
+	$ mogrify -crop 643x393+7+83 *.png

@@ -44,3 +44,15 @@ for name in *.AVI; do
 	ffmpeg -i "$name" -vcodec copy -an "${name}_no_sound.AVI"
 done 
 ```	
+
+### View all paths in the bash $PATH:
+
+```bash
+echo $PATH | tr ':' '\n'
+```
+
+### Find file
+
+```bash
+find / -name STRINGTOFIND -print 2> /dev/null
+```

@@ -2,9 +2,13 @@
 
 ## Grammar
 
-First, let's review grammer terms:
+#### Inflection (L. "inflectere" → bend in, curve)
+The modification of a word to express different grammatical categories such as tense, case, voice, aspect, person, number, gender, and mood. **The inflection of verbs is called conjugation**, and the **inflection of nouns, adjectives and pronouns is declension**.
 
-TBD
+#### Conjugation ("conjoin" → to join together)
+
+The creation of derived forms of a **verb** from its principal parts by inflection (alteration of form according to rules of grammar)
+
 
 ## How to parse a Latin sentence
 
