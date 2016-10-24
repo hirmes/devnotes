@@ -1,18 +1,59 @@
 # Latin
 
-## Grammar
+[Good intro (slu.edu)](http://www.slu.edu/colleges/AS/languages/classical/latin/tchmat/grammar/g-caseid.html) | [Charts (bencrowder.net)](http://bencrowder.net/design/latin/)
 
-#### Inflection (L. "inflectere" → bend in, curve)
-The modification of a word to express different grammatical categories such as tense, case, voice, aspect, person, number, gender, and mood. **The inflection of verbs is called conjugation**, and the **inflection of nouns, adjectives and pronouns is declension**.
+## General Grammatical Terms
 
-#### Conjugation ("conjoin" → to join together)
+### _Verb_ (L. "verbum" → word)
+An **action** (*bring, read, walk, run, learn*)
 
+an **occurrence** (*happen, become*)
+
+or a **state of being** (*be, exist, stand*)
+
+### _Clause_ (L. "claus-" → shut, closed)
+A group of words that includes a subject and a verb.
+
+Independent Clause: `John ate a pie`
+	
+Dependent Clause: `after he came home`
+
+### _Preposition_ (L. "prae" → before; "ponere" → to place)
+A word governing, and usually preceding, a **noun** or **pronoun** and expressing a relation to another word or element in the clause, as in "the man **on** the platform," "she arrived **after** dinner," "what did you do it **for**?"
+
+Most common: of, in, to, for, with, on, at, from, by, about	
+### _Pronoun_ (L. "pro-" → for, in place of)
+A word that substitutes for a noun: *I, you, she, it*, etc.
+
+### _Noun_ (L. "nomen" → name)
+Objects, places, actions, qualities, states of existence, or ideas.
+
+Occurs as the main word in the **subject of a clause**, the **object of a verb**, or the **object of a preposition**.
+
+### _Adjective_ (L. "adject-" → added)
+Describes a noun.
+
+### _Adverb_
+Word that modifies an adjective or verb.  Often ends in "-ly"
+
+
+
+## Latin Grammatical Terms
+
+### _Inflection_ (L. "inflectere" → bend in, curve)
+The modification of a word to express different grammatical categories such as tense, case, voice, aspect, person, number, gender, and mood. **The inflection of verbs is called _conjugation_**, and the **inflection of nouns, adjectives and pronouns is _declension_**.
+
+### _Conjugation_ (L. "conjugare" → join together)
 The creation of derived forms of a **verb** from its principal parts by inflection (alteration of form according to rules of grammar)
 
+### _Declension_ (Fr. "decliner" → to decline)
+Explanation 1: The variation of the form of a noun, pronoun, or adjective, by which its grammatical case, number, and gender are identified.
+
+Explanation 2: The inflection of nouns, pronouns, adjectives, and articles to indicate number (at least singular and plural), case (nominative or subjective, genitive or possessive, etc.), and gender. A declension is also a group of nouns that follow a particular pattern of inflection.
 
 ## How to parse a Latin sentence
 
-* Word order doesn't matter
+* Can't rely on word order
 * You figure out what's going on primarily by word endings
 	* Noun endings change with grammar
 	* Verb endings change based on their subject
@@ -29,7 +70,7 @@ Latin has three genders (like Spanish, French, etc.)
 
 Modifies noun endings
 
-### Nominative: The subject of the sentence
+### _Nominative_ (L. "naming"): The subject of the sentence
 
 If active, it's the thing doing the verb.
 
@@ -41,7 +82,7 @@ Subject must agree in number with the verb (true only in the Nominative case), s
 
 > **puellae** dormiunt - **the girls** are sleeping
 
-### Genitive: Shows possession 'of'
+### _Genitive_ (L. "beget"): Shows possession 'of'
 
 > gladius **militis** - **sword of** the soldier (or: **the soldier's** sword)
 
@@ -59,7 +100,7 @@ and Objective:
 
 > timor **canum** - the fear **of dogs**
 
-### Dative: Indirect objects ("to" or "for")
+### _Dative_ (L. "given"): Indirect objects ("to" or "for")
 
 > ego donum **tibi** do - I am giving a gift **to you**
 
@@ -73,7 +114,7 @@ and Possession:
 > 
 > **mihi** nomen est - "There is a name for me" (but really: My name is)
 
-### Accusative: Direct objects
+### _Accusative_ (L. "accusation"): Direct objects
 
 > puella **puerum** amat - the girl loves **the boy**
  
@@ -87,7 +128,7 @@ and Duration of Time:
 
 > tres horas - for three hours
 
-### Ablative: "by/with/from/in/on"
+### _Ablative_ (L. "taken away"): "by/with/from/in/on"
 
 > gladiator **gladio** vulneratus est - the gladiator was wounded **by a sword**
 
@@ -103,7 +144,7 @@ and Object of some prepositions:
 > 
 > ex **arce** - from **the citadel**
 
-### Vocative: Person or thing spoken to
+### _Vocative_: Person or thing spoken to
 
 Same as nominative (except 2nd sg.)
 

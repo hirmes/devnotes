@@ -18,6 +18,7 @@
 
 * [Apache / Webservers](webservers.md)
 * [psql](psql.md)
+* [DNS](DNS.md)
 
 ### Text, Words, Editors
 * [Markdown](Markdown.md)
