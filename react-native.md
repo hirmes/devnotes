@@ -44,19 +44,35 @@ To change the name of the app (but not the project) (Android only) modify:
 
 ## Running on emulator
 
+### Creating new emulators (virtual devices)
+* Launch Android Studio and go to Tools→Android→AVD Manager.
+* Make sure the SDK for the OS version of the device is installed (Tools→Android→SDK Manager)
+
+### Running
+
 ```bash
-$ emulator @react-native
+$ emulator @VIRTUALDEVICENAME
 ```
+
+where VIRTUALDEVICENAME could be `@react-native` or `@galaxy-a-97`
+
+
 In separate console window:
 
-```
+```bash
 $ sudo react-native run-android
 ```
 
-If you don't know the name of your emulator:
+### Troubleshooting
+
+If the emulator won't run from the commandline, try running it via Android Studio: Tools→Android→AVD Manager and click the green play button next to your emulator
+
+
+If you don't know the name of your emulator to use from commandline:
 
 `$ android list avd`
 
+For remote shaking: [Frappe](https://github.com/niftylettuce/frappe)
 
 ## Running on device
 
@@ -99,6 +115,12 @@ This error appears when trying to compile after adding a package such as react-n
 	$ cd android
 	$ sudo ./gradlew clean
 	
+### eslint errors with modern javascript syntax
+
+* If eslint is installed globally, the plugins need to be as well
+	* `eslint-plugin-react` and `eslint-plugin-babel`
+* parser in .eslintrc.json should be set to `babel-eslint`
+
 ## OAuth
 
 Setup android.manifest so app will accept custom URI scheme:
@@ -187,4 +209,10 @@ $ sudo ./gradlew assembleRelease
 then grab the `.apk` file here:
 
 `$ cd app/build/outputs/apk/`
+
+One liner:
+
+```bash
+sudo cd android && ./gradlew assembleRelease && cd app/build/outputs/apk/ && open .
+```
 

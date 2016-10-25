@@ -39,16 +39,16 @@ then to run program:
 $ node index.js
 ```
 	
-To uninstall package:
 
-```bash
-$ npm uninstall [package name] --save
-```
 
 
 Playground: [runkit.com](https://runkit.com)
 
 ## npm
+
+List current versions (top level only):
+
+`$ npm list --depth=0`
 
 Check your current modules against latest versions:
 
@@ -61,3 +61,12 @@ Update specific module to latest:
 and add `-g` (and potentially `sudo`) to update the global, rather than project instance of a module.
 
 [npm-check](https://www.npmjs.com/package/npm-check) might be slightly better way to do this.
+
+To remove/uninstall package:
+
+```bash
+$ npm uninstall [package name] --save
+```
+
+
+

@@ -62,6 +62,8 @@ Every time:
 $ git push -u origin master
 ```
 
+(`gitgo` is now an alias for the above, added to `.bash_profile`)
+
 ### Pull from repo and ignore local changes
 
 ```bash

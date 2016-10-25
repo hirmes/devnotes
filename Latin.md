@@ -11,6 +11,19 @@ an **occurrence** (*happen, become*)
 
 or a **state of being** (*be, exist, stand*)
 
+Types of verbs:
+
+* Action verb: express	action	(give,	eat, walk) or possession (have, own)
+	* Transitive verb
+		* Has a noun that receives action of verb called the **direct object**
+			* "John raises his hand." 
+		* **Indirect object** names object to whom or for whom action is done
+			* "John gave Jill the pencil."
+	* Intransitive verb
+* Linking verb
+* Helping verb
+
+
 ### _Clause_ (L. "claus-" → shut, closed)
 A group of words that includes a subject and a verb.
 
@@ -36,7 +49,14 @@ Describes a noun.
 ### _Adverb_
 Word that modifies an adjective or verb.  Often ends in "-ly"
 
+### _Predicate_
+The part of a sentence or clause containing a verb and stating something about the subject (e.g., "went home" in "John went home").
 
+### _Direct Object_
+A noun phrase denoting a person or thing that is the recipient of the action of a transitive verb, for example "the dog" in "Jimmy fed the dog."
+
+### _Indirect Object_
+A noun phrase referring to someone or something that is affected by the action of a transitive verb (typically as a recipient), but is not the primary object (e.g., "him" in "give him the book").
 
 ## Latin Grammatical Terms
 
@@ -47,28 +67,35 @@ The modification of a word to express different grammatical categories such as t
 The creation of derived forms of a **verb** from its principal parts by inflection (alteration of form according to rules of grammar)
 
 ### _Declension_ (Fr. "decliner" → to decline)
-Explanation 1: The variation of the form of a noun, pronoun, or adjective, by which its grammatical case, number, and gender are identified.
+Explanation 1: The variation of the form of a **noun**, pronoun, or adjective, by which its grammatical case, number, and gender are identified.
 
 Explanation 2: The inflection of nouns, pronouns, adjectives, and articles to indicate number (at least singular and plural), case (nominative or subjective, genitive or possessive, etc.), and gender. A declension is also a group of nouns that follow a particular pattern of inflection.
 
 ## How to parse a Latin sentence
 
 * Can't rely on word order
+* Articles and pronouns are often implied rather than explicit
+
+> Est charta parva → "Is" "map" "small" → It is a small map
+
 * You figure out what's going on primarily by word endings
 	* Noun endings change with grammar
 	* Verb endings change based on their subject
 
-## Genders
 
-Latin has three genders (like Spanish, French, etc.)
+### Number
 
-* Female
-* Male
-* Neuter
+Singular nouns that end in `-a` turn to `-ae` when plural
+
+Verbs and adjectives will match the number of the subject noun
+
+### Genders
+
+Latin has three genders (like Spanish, French, etc.): **Female, Male, Neuter**
 
 ## Cases
 
-Modifies noun endings
+Modifies **noun** endings
 
 ### _Nominative_ (L. "naming"): The subject of the sentence
 

@@ -41,3 +41,11 @@ Dyn
 	216.146.36.36
 	
 	
+## Commandline Tools
+
+Flush DNS cache:
+
+```bash
+$ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;
+```
+	
