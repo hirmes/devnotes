@@ -121,6 +121,31 @@ This error appears when trying to compile after adding a package such as react-n
 	* `eslint-plugin-react` and `eslint-plugin-babel`
 * parser in .eslintrc.json should be set to `babel-eslint`
 
+### webview shows up in dev build but not release build
+
+Replace `source={require('...')}` with `source={{ uri: 'file:///android_asset/helloworld.html' }}` and put html file in `android/app/src/main/assets`
+
+[Source](http://stackoverflow.com/questions/37102662/external-html-asset-not-bundled-by-react-native-in-production-build-for-use-by-w)
+
+### App won't install on device: "signatures do not match the previously installed version"
+
+This might mean that you installed a release build on the device and are now trying to overwrite it with a debug build.  Delete the release build from the device and try again.
+
+### Try to auto-remove console.log calls using `babel-plugin-transform-remove-console` and now your app won't compile
+
+Remove the plugin
+
+### App won't compile after removing package
+
+`react-native unlink PACKAGENAME`
+
+`sudo npm uninstall PACKAGENAME --save`
+
+Then make sure there are no references to it or libraries it uses in:
+
+* /android/app/src/main/java/com/APP_NAME/MainApplication.java
+* /android/app/build.gradle
+
 ## OAuth
 
 Setup android.manifest so app will accept custom URI scheme:

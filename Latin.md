@@ -11,7 +11,7 @@ an **occurrence** (*happen, become*)
 
 or a **state of being** (*be, exist, stand*)
 
-Types of verbs:
+Types of verbs: [doc](https://www.uvu.edu/writingcenter/docs/handouts/typesofverbs.pdf)
 
 * Action verb: express	action	(give,	eat, walk) or possession (have, own)
 	* Transitive verb
@@ -20,6 +20,8 @@ Types of verbs:
 		* **Indirect object** names object to whom or for whom action is done
 			* "John gave Jill the pencil."
 	* Intransitive verb
+		* Never has a	direct	or indirect object.
+		* "John rises slowly from his seat."
 * Linking verb
 * Helping verb
 
@@ -179,3 +181,40 @@ Same as nominative (except 2nd sg.)
 
 ## Declensions
 
+[Simple practice quizes (thelatinlibrary.com)](http://www.thelatinlibrary.com/decl.html)
+
+### _1st_ - Feminine (and a few "male" professions)
+
+Case|Singular|Plural
+----|--------|------
+**Nominative**|port**a**|port**ae**
+**Genitive**|port**ae**|port**arum**
+**Dative**|port**ae**	|port**is**
+**Accusative**|port**am**|port**as**
+**Ablative**|port**a**|port**is**
+
+### _2nd_ - Masculine
+
+Case|Singular|Plural
+----|--------|------
+**Nominative**|ocul**us**|ocul**i**
+**Genitive**|ocul**i**|ocul**orum**
+**Dative**|ocul**o**|ocul**is**
+**Accusative**|ocul**um**|ocul**os**
+**Ablative**|ocul**o**|ocul**is**
+
+### _2nd_ - Neuter
+
+Case|Singular|Plural
+----|--------|------
+**Nominative**|templ**um**|templ**a**
+**Genitive**|templ**i**|templ**orum**
+**Dative**|templ**o**	|templ**is**
+**Accusative**|templ**um**|templ**a**
+**Ablative**|templ**o**|templ**is**
+
+### 3rd - F, M, and N
+
+### 4th - ?
+
+### 5th - ?

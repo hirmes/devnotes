@@ -71,5 +71,9 @@ $ git reset --hard HEAD
 $ git pull
 ```
 	
+### Go back to last commit (deleting all non-commited changes):
 
+```bash
+$ git reset --hard HASH_OF_LAST_COMMIT
+```
 
