@@ -13,12 +13,16 @@ or a **state of being** (*be, exist, stand*)
 
 Types of verbs: [doc](https://www.uvu.edu/writingcenter/docs/handouts/typesofverbs.pdf)
 
-* Action verb: express	action	(give,	eat, walk) or possession (have, own)
+* Action verb: express	*action*	(give,	eat, walk) or *possession* (have, own)
 	* Transitive verb
 		* Has a noun that receives action of verb called the **direct object**
+			* Subject + verb + who or what? = DIRECT OBJECT
 			* "John raises his hand." 
 		* **Indirect object** names object to whom or for whom action is done
 			* "John gave Jill the pencil."
+		* Direct/Indirect object can be a series of words:
+			* "Sophia hates when her father lectures her about her grades."
+			* The subordinate clause "when her father lectures her about her grades." is the Direct Object
 	* Intransitive verb
 		* Never has a	direct	or indirect object.
 		* "John rises slowly from his seat."
@@ -84,6 +88,8 @@ Explanation 2: The inflection of nouns, pronouns, adjectives, and articles to in
 	* Noun endings change with grammar
 	* Verb endings change based on their subject
 
+1. Look for the verb. It will tell you ?
+2. ?
 
 ### Number
 

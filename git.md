@@ -1,4 +1,6 @@
-## git 
+# git 
+
+## Working with Locally Started Projects
 
 ### Starting a project
 
@@ -76,4 +78,25 @@ $ git pull
 ```bash
 $ git reset --hard HASH_OF_LAST_COMMIT
 ```
+
+
+## Working with Projects from Other Sources
+
+### Starting / Cloning a Project
+
+```bash
+$ git clone https://github.com/USERNAME/REPOSITORY.git
+```
+
+### Updating
+
+If you have *not made any local changes* and want your local copy to be the newest version available on the server:
+
+`$ git pull`
+
+## Other Stuff
+
+### List remotes
+
+`$ git remote -v`
 

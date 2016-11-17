@@ -5,8 +5,17 @@
 
 Since I already have node installed outside of Homebrew, it caused some problems. To fix:
 
+Step 0: Give group permissions to project
+
+```bash
+$ cd PROJECT_NAME
+$ chmod -R g+w *
+$ cd ..
+$ chmod g+w PROJECT_NAME
+```
+	
 Step 1:
-`$ sudo chmod 777 ~/.babel.json`
+`$ sudo chmod g+w ~/.babel.json`
 
 Step 2:
 Create a new file called `local.properties` in `/code/AwesomeProject/android` with the line
@@ -20,13 +29,6 @@ then start the emulator from there
 Step 4:
 run the project using sudo
 `$ sudo react-native run-android`
-
-Step 5:
-Permissions are all screwed up. You might need to
-`$ sudo chmod 777 *`
-
-
-For some reason when creating a new project ("NavTest") with $ react-native init NavTest all the permissions issues went away
 
 To change the name of the app (but not the project) (Android only) modify:
 `android/app/src/main/res/values/strings.xml`
@@ -135,6 +137,13 @@ This might mean that you installed a release build on the device and are now try
 
 Remove the plugin
 
+### App won't compile after installing package
+
+* Did you link it?
+* Make sure it got linked in `MainApplication.java` and **not** in `MainActivity.java`
+* Are there duplicate links to a library?
+* try `cd android`, then `sudo ./gradlew clean`
+
 ### App won't compile after removing package
 
 `react-native unlink PACKAGENAME`
@@ -235,9 +244,16 @@ then grab the `.apk` file here:
 
 `$ cd app/build/outputs/apk/`
 
-One liner:
 
-```bash
-sudo cd android && ./gradlew assembleRelease && cd app/build/outputs/apk/ && open .
+### Versioning
+
+In `android/app/build.gradle`:
+
 ```
-
+android {
+    ...
+    defaultConfig {
+        ...
+        versionCode 2
+        versionName "2.0"
+```
