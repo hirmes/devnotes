@@ -9,7 +9,7 @@ Step 0: Give group permissions to project
 
 ```bash
 $ cd PROJECT_NAME
-$ chmod -R g+w *
+$ sudo chmod -R g+w *
 $ cd ..
 $ chmod g+w PROJECT_NAME
 ```
@@ -65,7 +65,13 @@ In separate console window:
 $ sudo react-native run-android
 ```
 
-### Troubleshooting
+## Debugging
+
+In Chrome DevTools, switch to Vertical orientation for a better experience.
+
+**Debugging webview**: In Chrome: `chrome://inspect/#devices` ([Source](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews)\)
+
+## Troubleshooting
 
 If the emulator won't run from the commandline, try running it via Android Studio: Tools→Android→AVD Manager and click the green play button next to your emulator
 
@@ -76,7 +82,7 @@ If you don't know the name of your emulator to use from commandline:
 
 For remote shaking: [Frappe](https://github.com/niftylettuce/frappe)
 
-## Running on device
+### Running on device
 
 Quit emulator (if running), then plug in device, then:
 

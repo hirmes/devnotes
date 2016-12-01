@@ -68,5 +68,15 @@ To remove/uninstall package:
 $ npm uninstall [package name] --save
 ```
 
+Install a local package:
 
+```bash
+$ cd PROJECT
+$ npm install /path/to/package/package
+```
 
+Install a package directly from github:
+
+```bash
+npm install https://github.com/USER/PACKAGE#BRANCH --save
+```
