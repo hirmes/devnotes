@@ -1,27 +1,39 @@
 # Text Manipulation on the Command Line
 
+## Plain Text
+
 **Remove** all text before and after two strings:
 
 ```bash
 sed '/START STRING/,/END STRING/ !d' original_file.html > new_file.html
 ```
 
-Batch **rename** files:
+
+## JSON
+
+### Formatting
+
+Format from clipboard:
 
 ```bash
-ls foo*.jpg | awk '{print("mv "$1" "$1)}' | sed 's/foo/bar/2' | /bin/sh
+pbpaste | python -m json.tool > OUTPUT.json
 ```
-or
+
+Format from a file:
 
 ```bash
-ls *.jpg | awk '{print("mv "$1" prepended_string"$1)}' | /bin/sh
+cat FILENAME | python -m json.tool > OUTPUT.json
 ```
 
-(leave off the last pipe to preview what the changes will be without performing them)
 
-Format **JSON**: Copy the JSON and then:
+### Querying with jq
 
-```bash
-pbpaste | python -m json.tool
-```
+Find the number of items in the "results" array:
+`jq ".response.results | length" filename.json`
 
+Within each item of the "results" array there is an element called "window". Find out how many items in the results array have the window element equal to "public":
+`jq '[ .response.results[] | select(.window == "public") ] | length' filename.json`
+
+### OS X App
+
+**Cocoa JSON Editor** 

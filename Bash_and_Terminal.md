@@ -56,3 +56,31 @@ echo $PATH | tr ':' '\n'
 ```bash
 find / -name STRINGTOFIND -print 2> /dev/null
 ```
+
+### Batch rename files:
+
+```bash
+ls foo*.jpg | awk '{print("mv "$1" "$1)}' | sed 's/foo/bar/2' | /bin/sh
+```
+or
+
+```bash
+ls *.jpg | awk '{print("mv "$1" prepended_string"$1)}' | /bin/sh
+```
+
+(leave off the last pipe to preview what the changes will be without performing them)
+
+### man / more / less
+
+#### Moving around
+
+* `g` - goto top/start-of-file
+* `shift-g` - goto bottom/end-of-file
+* `space` - page down
+* `arrow up/down` - one line up/down
+
+
+#### Search
+
+* Type `/` then your search term and enter
+* Then type `n` for the next search result

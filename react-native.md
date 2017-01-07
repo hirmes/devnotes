@@ -71,6 +71,8 @@ In Chrome DevTools, switch to Vertical orientation for a better experience.
 
 **Debugging webview**: In Chrome: `chrome://inspect/#devices` ([Source](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews)\)
 
+To test custom URIs and deep linking: [Test Deep Links & Deep linking App](https://play.google.com/store/apps/details?id=com.manoj.dlt)
+
 ## Troubleshooting
 
 If the emulator won't run from the commandline, try running it via Android Studio: Tools→Android→AVD Manager and click the green play button next to your emulator
@@ -163,7 +165,7 @@ Then make sure there are no references to it or libraries it uses in:
 
 ## OAuth
 
-Setup android.manifest so app will accept custom URI scheme:
+Setup `android/app/src/AndroidManifest.xml` so app will accept custom URI scheme:
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -187,6 +189,11 @@ Setup android.manifest so app will accept custom URI scheme:
 
 </manifest>
 ```
+Note: `android:host` also accepts a wildcard:
+
+```xml
+<data ... android:host="*" />
+```
 
 ## Styling
 
@@ -206,33 +213,54 @@ Setup android.manifest so app will accept custom URI scheme:
 * Place font files in /PROJECTNAME/android/app/src/main/assets/fonts
 * Refer to font in styles: `fontFamily: "Gotham Medium"`
 
-## ES6
+## ES6 Class Template
 
-### Classes
-
-In `YourClassName.js`:
+In `ClassName.js`:
 
 ```javascript
-class YourClassName extends Component {
+import React, { Component } from "react";
+import { StyleSheet, View, Text } from "react-native";
+
+class ClassName extends Component {
+
+	constructor(props, context) {
+		super(props, context);
+
+		// this.METHOD = this.METHOD.bind(this);
+	}
+
+	componentDidMount() {
+	}
+
+	render() {
+		return (
+			<View style={styles.container}>
+				<Text>This is a test</Text>
+			</View>
+		);
+	}
 }
-export default YourClassName;
+
+CLASSNAME.propTypes = {
+	SOMEPROP: React.PropTypes.array
+};
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1
+	}
+});
+
+export default ClassName;
 ```
 
 Then to import:
 
 ```javascript
-import YourClassName from "./YourClassName.js";
+import ClassName from "./ClassName.js";
 ```
 
-If you have methods tha need to be referenced in other methods, add a constructor method:
-
-```javascript
-	constructor(props, context) {
-		super(props, context);
-
-		this.METHODNAME = this.METHODNAME(this);
-	}
-```
+Note: Class names **must** be capitalized.
 
 [Understanding Class Export Syntax](http://stackoverflow.com/questions/31852933/why-es6-react-component-works-only-with-export-default/31853887#31853887)
 

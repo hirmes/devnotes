@@ -1,3 +1,5 @@
+[[toc]]
+
 # git 
 
 ## Working with Locally Started Projects
@@ -65,6 +67,16 @@ $ git push -u origin master
 ```
 
 (`gitgo` is now an alias for the above, added to `.bash_profile`)
+
+
+Push a branch to a specific remote repo:
+
+```bash
+$ git push REMOTE_NAME BRANCH_NAME
+```
+
+(get list of removes with `$ git remote -v`)
+
 
 ### Pull from repo and ignore local changes
 
